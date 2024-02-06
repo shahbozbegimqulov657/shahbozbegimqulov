@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #FFF;
+}
+
+header {
+    
+    width: 100%;
+    height: auto;
+
+}
+
+nav {
+    width: 85%;
+    margin: auto;
+}
+
+.nav1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 97px;
+    background-color: gainsboro;
+    z-index: 1;
+}
+header nav img{
+    /* margin-top: -13px; */
+    width: 150px;
+    height: 100px;
+    border-radius: 30%; 
+}
+
+
+
+
+header .nav1 nav ul {
+    float: right;
+    list-style: none;
+    line-height: 80px;
+
+}
+
+header .nav1 nav ul li {
+    display: inline-block;
+    padding: 7px 13px;
+}
+
+header nav ul li a {
+    color: #666;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    color: #00dcd8;
+}
+
+.checkboxbtn {
+    color: #FFF;
+    font-size: 20px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    line-height: 85px;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.head_main {
+    padding-top: 200px;
+    width: 85%;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+    gap: 10px;
+}
+
+.head_text {
+    max-width: 400px;
+}
+
+.head_text h3 {
+    color: var(--Solid-Heading, #42446E);
+    font-family: Poppins;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+    /* 120.69% */
+    letter-spacing: -1px;
+}
+
+.head_text span {
+    color: #00dcd8;
+    font-family: Poppins;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: -1px;
+}
+.head_image img{
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px black ;
+}
+
+
+
+
+/* header responsive ni boshlanishi */
+
+@media screen and (max-width:690px) {
+    .head_main{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .checkboxbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 96px;
+        left: -100%;
+        text-align: center;
+        background: rgba(128, 128, 128, 0.889);
+        transition: 0.7s;
+        z-index: 1;
+    }
+    
+
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    header .nav1 nav ul li {
+        display: block;
+    }
+    header .nav1 nav ul li a{
+        color: #FFF;
+    }
+    header nav ul li a:hover{
+        color: #00dcd8;
+    }
+}
+@media screen and (max-width:710px) {
+    .head_text h3{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:970px) {
+    .head_main{
+        margin: auto;
+    }
+    .head_image img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+
+
+
+
+.main {
+    margin-top: 200px;
+    width: 100%;
+    height: auto;
+}
+
+.main .main_text {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+.main_text h3 {
+    color: #42446E;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.main_text p {
+    margin-top: 49px;
+    color: var(--light-Content, #A7A7A7);
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+
+.main2 {
+    margin-top: 214px;
+    width: 100%;
+    height: auto;
+}
+
+.main2 .main2_text {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+.main2_text h3 {
+    color: var(--Solid-Heading, #42446E);
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.main2_text p {
+    margin-top: 49px;
+    color: var(--light-Content, #A7A7A7);
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.main_image {
+    padding-top: 140px;
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 106px;
+    row-gap: 71px;
+}
+
+.main_image img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.main2_bloks {
+    padding-top: 99px;
+    max-width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 48px;
+    row-gap: 68px;
+
+}
+
+.main2_bloks .blok {
+    max-width: 373px;
+    height: auto;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.20);
+}
+
+.blok .blok_img img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    height: 260px;
+}
+
+.izoh h3 {
+    margin-top: 27px;
+    color: #000;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.izoh p {
+    padding-top: 17px;
+    margin: auto;
+    max-width: 314px;
+    color: var(--dark-content, #666);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+}
+i{
+    color: #000;
+}
+.izoh h5 {
+    padding-top: 12px;
+    margin: auto;
+    max-width: 314px;
+    color: var(--Solid-Heading, #42446E);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.izoh h5 span {
+    color: var(--Solid-Heading, #42446E);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+
+.izoh_quyi {
+    padding-bottom: 25px;
+    padding-top: 21px;
+    max-width: 314px;
+    margin: auto;
+    display: flex;
+    column-gap: 48px;
+}
+
+.izoh_quyi1 {
+    display: flex;
+    column-gap: 10px;
+}
+
+.izoh_quyi1 a {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+    text-decoration-line: underline;
+}
+
+
+.text4 {
+    padding-top: 222px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+}
+.text4 .info{
+    
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 15px;
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:395px) {
+    .main_text h3{
+        font-size: 40px;
+    }
+}
+
+
+@media screen and (max-width:1000px) {
+    .izoh h3 {
+        font-size: 20px;
+    }
+
+    .izoh p {
+        font-size: 14px;
+    }
+
+    .izoh h5 {
+        font-size: 12px;
+    }
+
+    .izoh span {
+        font-size: 12px;
+    }
+
+    .izoh_quyi1 img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .izoh_quyi1 a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .main_image {
+        grid-template-columns: auto auto;
+    }
+
+    .main2_bloks {
+        grid-template-columns: auto auto;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    .main_image {
+        grid-template-columns: auto;
+    }
+
+    .main2_bloks {
+        grid-template-columns: auto;
+    }
+}
